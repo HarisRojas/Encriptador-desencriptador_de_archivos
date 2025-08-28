@@ -94,7 +94,7 @@ def cifrar_archivo(ruta_archivo: str, password: str):
         "contenido": base64.b64encode(datos_cifrados).decode()
     }
 
-    salida = ruta_archivo + ".sha256"
+    salida = ruta_archivo + ".encrypted"
     with open(salida, "w") as f:
         json.dump(metadata, f)
 
@@ -113,3 +113,4 @@ if __name__ == "__main__":
 
     password = pedir_password("Ingrese la contraseña: ")
     cifrar_archivo(archivo, password)
+
