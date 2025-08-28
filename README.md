@@ -1,4 +1,4 @@
-# File Encryptor / Decryptor
+# Encriptador y desencriptador de archivos
 
 Este repositorio contiene dos scripts en Python para **cifrar y descifrar archivos** usando AES (a través de la librería `cryptography`) con una contraseña proporcionada por el usuario.
 
