@@ -1,1 +1,0 @@
-# Encriptador_archivos_sha256
