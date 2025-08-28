@@ -2,8 +2,8 @@
 
 Este repositorio contiene dos scripts en Python para **cifrar y descifrar archivos** usando AES (a través de la librería `cryptography`) con una contraseña proporcionada por el usuario.
 
-- `encrypt.py`: Cifra cualquier archivo seleccionado por el usuario y genera un archivo `.sha256` que contiene el contenido cifrado y la extensión original.
-- `decrypt.py`: Descifra un archivo `.sha256` usando la contraseña correcta y restaura el archivo original. Tras descifrar, el archivo `.sha256` se elimina automáticamente.
+- `encrypt.py`: Cifra cualquier archivo seleccionado por el usuario y genera un archivo `.encrypted` que contiene el contenido cifrado y la extensión original.
+- `decrypt.py`: Descifra un archivo `.encrypted` usando la contraseña correcta y restaura el archivo original. Tras descifrar, el archivo `.encrypted` se elimina automáticamente.
 
 ## Características
 
@@ -30,7 +30,7 @@ Este repositorio contiene dos scripts en Python para **cifrar y descifrar archiv
    ```
 2. Selecciona el archivo que deseas cifrar mediante el cuadro de diálogo.
 3. Ingresa la contraseña (se enmascarará mientras la escribes).
-4. Se generará un archivo `archivo_original.sha256` en la misma ubicación.
+4. Se generará un archivo `archivo_original.encrypted` en la misma ubicación.
 
 ### Descifrar un archivo
 
@@ -38,10 +38,10 @@ Este repositorio contiene dos scripts en Python para **cifrar y descifrar archiv
    ```bash
    python decrypt.py
    ```
-2. Selecciona el archivo `.sha256` mediante el cuadro de diálogo.
+2. Selecciona el archivo `.encrypted` mediante el cuadro de diálogo.
 3. Ingresa la contraseña correcta.
 4. El archivo descifrado se guardará con `_descifrado` en el nombre y la extensión original.
-5. El archivo `.sha256` original se eliminará automáticamente.
+5. El archivo `.encrypted` original se eliminará automáticamente.
 
 ## Seguridad
 
@@ -54,7 +54,7 @@ Este repositorio contiene dos scripts en Python para **cifrar y descifrar archiv
 # Cifrar archivo.txt
 python encrypt.py
 
-# Descifrar archivo.txt.sha256
+# Descifrar archivo.txt.encrypted
 python decrypt.py
 ```
 
